@@ -17,12 +17,12 @@ void loop() {
   Serial.print("Measurement: ");
   Serial.println(measurement);
   
-  // Play tone on speaker if measurement exceeds the threshold
+ 
   if (measurement > threshold) {
-    tone(speakerPin, 1000);  // Play a 1000 Hz tone on the speaker
+    tone(speakerPin, 1000);  
   } else {
-    noTone(speakerPin);  // Stop the tone
+    noTone(speakerPin);  
   }
 
-  delay(10);  // Small delay for readability
+  delay(10);  
 }
