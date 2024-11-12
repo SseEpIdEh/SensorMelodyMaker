@@ -1,0 +1,87 @@
+Some examples of famous melodies or sound effects you can try with a small speaker and Arduino
+
+
+ # How to Use in Your Code:   call them when the capacitive sensor is touched
+  
+if (measurement > threshold) {
+    playMarioTheme(speakerPin);  // Replace with any sound function you like
+}
+
+
+# 1. Super Mario Theme (Opening)
+void playMarioTheme(int speakerPin) {
+  tone(speakerPin, 330); delay(100);  // E
+  tone(speakerPin, 330); delay(100);  // E
+  delay(100);
+  tone(speakerPin, 330); delay(100);  // E
+  delay(100);
+  tone(speakerPin, 262); delay(100);  // C
+  tone(speakerPin, 330); delay(100);  // E
+  delay(100);
+  tone(speakerPin, 392); delay(100);  // G
+  delay(300);
+  tone(speakerPin, 196); delay(100);  // G (low)
+  delay(300);
+  noTone(speakerPin);
+}
+
+
+2. Star Wars Theme (Opening)
+
+void playStarWarsTheme(int speakerPin) {
+  tone(speakerPin, 440); delay(500);  // A
+  tone(speakerPin, 440); delay(500);  // A
+  tone(speakerPin, 440); delay(500);  // A
+  tone(speakerPin, 349); delay(350);  // F
+  tone(speakerPin, 523); delay(150);  // C
+  tone(speakerPin, 440); delay(500);  // A
+  tone(speakerPin, 349); delay(350);  // F
+  tone(speakerPin, 523); delay(150);  // C
+  tone(speakerPin, 440); delay(1000); // A
+  noTone(speakerPin);
+}
+
+3. Pirates of the Caribbean Theme (Intro)
+
+void playPiratesTheme(int speakerPin) {
+  tone(speakerPin, 392); delay(200);  // G
+  tone(speakerPin, 440); delay(200);  // A
+  tone(speakerPin, 466); delay(200);  // Bb
+  tone(speakerPin, 392); delay(200);  // G
+  tone(speakerPin, 392); delay(200);  // G
+  tone(speakerPin, 466); delay(200);  // Bb
+  tone(speakerPin, 523); delay(200);  // C
+  tone(speakerPin, 392); delay(200);  // G
+  noTone(speakerPin);
+}
+
+
+4. Tetris Theme (Korobeiniki)
+
+void playTetrisTheme(int speakerPin) {
+  tone(speakerPin, 659); delay(300);  // E5
+  tone(speakerPin, 494); delay(150);  // B4
+  tone(speakerPin, 523); delay(150);  // C5
+  tone(speakerPin, 587); delay(300);  // D5
+  tone(speakerPin, 523); delay(150);  // C5
+  tone(speakerPin, 494); delay(150);  // B4
+  tone(speakerPin, 440); delay(300);  // A4
+  tone(speakerPin, 440); delay(150);  // A4
+  tone(speakerPin, 494); delay(150);  // B4
+  tone(speakerPin, 523); delay(300);  // C5
+  tone(speakerPin, 587); delay(300);  // D5
+  noTone(speakerPin);
+}
+5. Harry Potter Theme (Hedwig's Theme)
+void playHarryPotterTheme(int speakerPin) {
+  tone(speakerPin, 523); delay(500);  // C
+  tone(speakerPin, 622); delay(250);  // D#
+  tone(speakerPin, 698); delay(500);  // F
+  tone(speakerPin, 622); delay(250);  // D#
+  tone(speakerPin, 784); delay(750);  // G
+  tone(speakerPin, 659); delay(500);  // E
+  tone(speakerPin, 622); delay(250);  // D#
+  tone(speakerPin, 698); delay(500);  // F
+  tone(speakerPin, 784); delay(750);  // G
+  noTone(speakerPin);
+}
