@@ -2,13 +2,13 @@
 
 // Define sensor, LED, and buzzer pin constants
 CapacitiveSensor sensor = CapacitiveSensor(4, 2);  // 2MΩ resistor between pins 4 & 2
-const int ledPin = 9;  // Pin for the LED
+//const int ledPin = 9;  // Pin for the LED// OPTIONAL
 const int buzzerPin = 10;  // Pin for the buzzer
 const int threshold = 200;  // Adjust this value based on your sensor readings
 
 void setup() {
   Serial.begin(115200);  // Begin Serial Monitor
-  pinMode(ledPin, OUTPUT);  // Set LED pin as output
+  //pinMode(ledPin, OUTPUT);  // Set LED pin as output
   pinMode(buzzerPin, OUTPUT);  // Set buzzer pin as output
 }
 
@@ -20,7 +20,7 @@ void loop() {
 
   // If the measurement exceeds the threshold, turn on LED and play melody
   if (measurement > threshold) {
-    digitalWrite(ledPin, HIGH);  // Turn on the LED
+    //digitalWrite(ledPin, HIGH);  // Turn on the LED
     
     // Recitation Assignment - ALTER THE CODE HERE, replace pseudocode
     // Play the melody on the buzzer
