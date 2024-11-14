@@ -2,8 +2,8 @@
 #include <Arduino.h>
 
 // Define sensor and speaker pin constants
-CapacitiveSensor sensor = CapacitiveSensor(4, 2);  // 2MΩ resistor between pins 4 & 2
-const int speakerPin = 9;  // Pin for the speaker 
+CapacitiveSensor sensor = CapacitiveSensor(4, 2);  // 1MΩ resistor between pins 4 & 2
+const int speakerPin = 9;  // Pin for the speaker // 15 ohm between pin 9 and speaker
 const int threshold = 200;  // Adjust this value based on your sensor readings
 
 void setup() {
