@@ -21,22 +21,25 @@ void loop() {
   // If the measurement exceeds the threshold, turn on LED and play melody
   if (measurement > threshold) {
     digitalWrite(ledPin, HIGH);  // Turn on the LED
-
+    
+    // Recitation Assignment - ALTER THE CODE HERE, replace pseudocode
     // Play the melody on the buzzer
-    tone(buzzerPin, 262);  // C4 note
-    delay(250);
+    // C4 note for 262 milliseconds
+    // off for 250 milliseconds
 
-    tone(buzzerPin, 392);  // G4 note
-    delay(500);
+    // G4 note for 392 milliseconds
+    // off for 500 milliseocnds
 
-    tone(buzzerPin, 311);  // Eb4 note
-    delay(500);
+    // Eb4 note for 311 milliseconds
+    // off for 500 milliseocnds
 
-    tone(buzzerPin, 262);  // C4 note
-    delay(250);
+    // C4 note for 262 milliseconds
+    // off for 250 milliseocnds
 
     noTone(buzzerPin);  // Stop the sound
     delay(250);
+
+    // DO NOT CHANGE ANYTHING BELOW THIS LINE !!
   } else {
     digitalWrite(ledPin, LOW);  // Turn off the LED when not touched
   }
