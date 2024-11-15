@@ -4,16 +4,16 @@
 // Define sensor and speaker pin constants
 CapacitiveSensor sensor = CapacitiveSensor(4, 2);  // 1MΩ resistor between pins 4 & 2
 const int speakerPin = 9;  // Pin for the speaker // 15 ohm between pin 9 and speaker
-const int threshold = 200;  // Adjust this value based on your sensor readings
+const int threshold = 200;  
 
 void setup() {
-  Serial.begin(115200);  // Begin Serial Monitor
-  pinMode(speakerPin, OUTPUT);  // Set speaker pin as output
+  Serial.begin(115200); 
+  pinMode(speakerPin, OUTPUT);  
 }
 
 void loop() {
   // Measure capacitance
-  long measurement = sensor.capacitiveSensor(30);  // Take 30 samples for accuracy
+  long measurement = sensor.capacitiveSensor(30);  
   Serial.print("Measurement: ");
   Serial.println(measurement);
   
