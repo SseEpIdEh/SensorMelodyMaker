@@ -1,4 +1,4 @@
-Some examples of famous melodies or sound effects you can try with a small speaker and Arduino
+Some examples of famous melodies or sound effects you can try with a small speaker or buzzer and Arduino
 
 
  # How to Use in Your Code:   call them when the capacitive sensor is touched
