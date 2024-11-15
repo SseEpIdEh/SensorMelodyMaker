@@ -1,29 +1,23 @@
 #include <CapacitiveSensor.h>
 
-// Define sensor, LED, and buzzer pin constants
-CapacitiveSensor sensor = CapacitiveSensor(4, 2);  // 2MΩ resistor between pins 4 & 2
-//const int ledPin = 9;  // Pin for the LED// OPTIONAL
-const int buzzerPin = 10;  // Pin for the buzzer
-const int threshold = 200;  // Adjust this value based on your sensor readings
+
+CapacitiveSensor sensor = CapacitiveSensor(4, 2);  // 1MOHM connect between pin 2 and pin 4
+const int buzzerPin = 10;      // Pin for the buzzer , negetive connect to ground
+const int threshold = 200;  
 
 void setup() {
-  Serial.begin(115200);  // Begin Serial Monitor
-  //pinMode(ledPin, OUTPUT);  // Set LED pin as output
-  pinMode(buzzerPin, OUTPUT);  // Set buzzer pin as output
+  Serial.begin(115200);
+  pinMode(buzzerPin, OUTPUT);  
 }
 
 void loop() {
-  // Measure capacitance
   long measurement = sensor.capacitiveSensor(30);  // Take 30 samples for accuracy
   Serial.print("Measurement: ");
   Serial.println(measurement);
 
-  // If the measurement exceeds the threshold, turn on LED and play melody
   if (measurement > threshold) {
-    //digitalWrite(ledPin, HIGH);  // Turn on the LED
-    
-    // Recitation Assignment - ALTER THE CODE HERE, replace pseudocode
-    // Play the melody on the buzzer
+      // Recitation Assignment - ALTER THE CODE HERE, replace pseudocode
+        // Play the melody on the buzzer
     // C4 note for 262 milliseconds
     // off for 250 milliseconds
 
@@ -36,13 +30,9 @@ void loop() {
     // C4 note for 262 milliseconds
     // off for 250 milliseocnds
 
-    noTone(buzzerPin);  // Stop the sound
-    delay(250);
 
+    
     // DO NOT CHANGE ANYTHING BELOW THIS LINE !!
-  } else {
-    digitalWrite(ledPin, LOW);  // Turn off the LED when not touched
-  }
-
+   
   delay(10);  // Small delay for readability
 }
