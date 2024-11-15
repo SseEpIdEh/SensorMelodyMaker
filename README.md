@@ -14,7 +14,7 @@ The capacitive sensor detects touch, triggering different musical notes and sequ
 
 # Prerequisites:
 	•	Arduino board (e.g., Arduino Uno)
-	•	Speaker or buzzer /resistor (330ohm)
+	•	Speaker or buzzer /resistor (15ohm)
 	•	Capacitive touch sensor
 	•	Jumper wires and a breadboard
 	•	Arduino IDE installed on your computer
