@@ -85,3 +85,22 @@ void playHarryPotterTheme(int speakerPin) {
   tone(speakerPin, 784); delay(750);  // G
   noTone(speakerPin);
 }
+
+
+//"Twinkle Twinkle Little Star
+tone(buzzerPin, 262, 500); delay(500);
+tone(buzzerPin, 262, 500); delay(500);
+tone(buzzerPin, 392, 500); delay(500);
+tone(buzzerPin, 392, 500); delay(500);
+tone(buzzerPin, 440, 500); delay(500);
+tone(buzzerPin, 440, 500); delay(500);
+tone(buzzerPin, 392, 1000); delay(1000);
+
+tone(buzzerPin, 349, 500); delay(500);
+tone(buzzerPin, 349, 500); delay(500);
+tone(buzzerPin, 330, 500); delay(500);
+tone(buzzerPin, 330, 500); delay(500);
+tone(buzzerPin, 294, 500); delay(500);
+tone(buzzerPin, 294, 500); delay(500);
+tone(buzzerPin, 262, 1000); delay(1000);
+
